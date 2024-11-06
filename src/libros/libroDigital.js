@@ -8,6 +8,10 @@ class LibroDigital extends Libro{
 
     }
 
+    toString(){
+          return(`${super.toString()} Tamaño de archivo: ${this.tamanioArchivo} Link de descarga: ${this.linkDescarga}`)  
+    }
+
 
 }
 export  {LibroDigital};

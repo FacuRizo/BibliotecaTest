@@ -6,6 +6,14 @@ class LibroFisico extends Libro{
         this.enBiblioteca=enBiblioteca;
 
     }
+    enBibliotecaToString() {
+        return this.enBiblioteca ? "Sí" : "No";
+      }
+    
+
+    toString(){
+        return(`${super.toString()} Numero de pagina: ${this.numeroDePaginas} Esta en biblioteca:`, this.enBibliotecaToString())  
+  }
 }
 
 export  {LibroFisico};

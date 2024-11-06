@@ -4,6 +4,11 @@ class Usuario{
         this.idUsuario=idUsuario;
         this.librosAdquiridos=librosAdquiridos;
     }
+    toString(){
+        console.log(`Nombre: ${this.nombre} id: ${this.idUsuario}`);
+        this.listarLibros();
+    }
+    
     agregarlibro(libro){
         this.librosAdquiridos.push(libro)
     }
@@ -32,9 +37,12 @@ class Usuario{
     }
 
     listarLibros(){
-        for(let libros of this.librosAdquiridos){
+        for(let unLibro of this.librosAdquiridos){
+
+            console.log(unLibro.toString());
+            console.log('---------')
             //datos basicos
-            console.log(`Libro: ${libros.titulo}`);
+            /*console.log(`Libro: ${libros.titulo}`);
             console.log(`Autor: ${libros.autor}`);
             console.log(`ISBN: ${libros.ISBN}`);
             console.log(`Año Publicacion: ${libros.anioPublicacion}`);
@@ -48,7 +56,7 @@ class Usuario{
                 console.log(`Tamaño de archivo: ${libros.tamanioArchivo}`);
                 console.log(`Link de descarga: ${libros.linkDescarga}`);
             }
-            console.log('---------');
+            ;*/
         }
     }
 

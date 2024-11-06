@@ -7,5 +7,8 @@ class Libro{
         this.anioPublicacion=anioPublicacion;
     }
 
+    toString(){
+       return(`Titulo: ${this.titulo} Autor: ${this.autor} ISBN: ${this.ISBN} Año publicacion: ${this.anioPublicacion}`)
+    }
 }
 export {Libro};

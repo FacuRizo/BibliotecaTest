@@ -70,10 +70,12 @@ miBiblioteca.listarLibrosdisponibles();
 console.log(`------`);
 
 for( let aUsuario of usuarios){
-    console.log(`Nombre: ${aUsuario.nombre}`);
-    console.log(`idUsuario: ${aUsuario.idUsuario}`);
+    /*console.log(`Nombre: ${aUsuario.nombre}`);
+    console.log(`idUsuario: ${aUsuario.idUsuario}`);*/
+    //console.log(aUsuario.toString());
+    aUsuario.toString();
     console.log(`------`);
-    aUsuario.listarLibros();
+    //aUsuario.listarLibros();
     
 }
 console.log("");
